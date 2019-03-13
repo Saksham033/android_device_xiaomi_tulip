@@ -402,3 +402,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.bservice_enable=true
 
+# ADB HAX
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.debuggable=1 \
+    persist.sys.usb.config=adb \
+    ro.secure=0 \
+    ro.adb.secure=0
