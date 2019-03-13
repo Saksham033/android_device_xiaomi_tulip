@@ -24,8 +24,9 @@ $(call inherit-product-if-exists, vendor/xiaomi/MiuiCamera/tulip.mk)
 $(call inherit-product, device/xiaomi/tulip/device.mk)
 
 # Inherit some common Mokee stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 2140
+TARGET_GAPPS_ARCH := arm64
 
 PRODUCT_NAME := aosp_tulip
 PRODUCT_BRAND := Xiaomi
